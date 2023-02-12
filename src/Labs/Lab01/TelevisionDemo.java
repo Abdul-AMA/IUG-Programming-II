@@ -1,4 +1,4 @@
-package Lab01;
+package Labs.Lab01;
 
 import java.util.Scanner;
 /** This class demonstrates the Television class*/
