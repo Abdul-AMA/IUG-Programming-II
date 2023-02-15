@@ -1,4 +1,4 @@
-package Lab01;
+package Labs.Lab01;
 
 import java.util.Scanner;
 /** This class demonstrates the Television class*/
@@ -38,6 +38,7 @@ public class TelevisionDemo{
                 "   Volume:  " + bigScreen.getVolume());
         System.out.println();      //for a blank line
         //HERE IS WHERE YOU DO TASK #5
+
         Television portable = new Television("Sharp" ,19);
         portable.power();
         System.out.println("A " + portable.getSCREEN_SIZE() + " inch " +

@@ -1,4 +1,4 @@
-package Lab01;
+package Labs.Lab01;
 // The purpose of this class is to model a television
 
 public class Television {
