@@ -7,7 +7,7 @@ public class P9_11 {
     }
 }
 class LinearEquation {
-    int a, b, c, d, e, f;
+    private int a, b, c, d, e, f;
     LinearEquation(int a, int b, int c, int d, int e, int f) {
         this.a = a;
         this.b = b;
