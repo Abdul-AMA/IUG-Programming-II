@@ -149,8 +149,8 @@ public class MyDate {
 
     public MyDate previousDay() {
         int newDay = 0;
-        int newMonth = getMonth();
-        int newYear = getYear() + 1;
+        int newMonth = 0;
+        int newYear = 0;
 
         if (getDay() == 1) {
             newDay = getMaxDay(getMonth());
