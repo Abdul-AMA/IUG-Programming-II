@@ -2,31 +2,27 @@ package Chapters.Chapter10;
 
 import java.util.*;
 
-import static java.lang.System.in;
-
 public class P10_7 {
     public static void main(String[] args) {
 
-        Account accounts [] = new Account[10];
-
+        Account accounts[] = new Account[10];
 
 
         for (int i = 0; i < 10; i++) {
-            accounts[i] = new Account(i,100);
+            accounts[i] = new Account(i, 100);
         }
 
 
         Scanner in = new Scanner(System.in);
 
 
-
-        while (true){
+        while (true) {
             System.out.print("Enter an id: ");
             int id = in.nextInt();
 
-            if (id >= 0 && id <= 10){
+            if (id >= 0 && id <= 10) {
                 boolean x = true;
-                while (x){
+                while (x) {
                     System.out.println("===================================");
                     System.out.println("Main Menu");
                     System.out.println("1: Check Balance");
@@ -36,7 +32,7 @@ public class P10_7 {
                     System.out.print("Enter a choice now:");
                     int choice = in.nextInt();
 
-                    switch (choice){
+                    switch (choice) {
                         case 1:
                             System.out.println("The balance is: " + accounts[id].getBalance());
                             break;
@@ -57,8 +53,7 @@ public class P10_7 {
                 }
 
 
-
-            }else{
+            } else {
                 System.out.println("Invalid input!");
             }
 

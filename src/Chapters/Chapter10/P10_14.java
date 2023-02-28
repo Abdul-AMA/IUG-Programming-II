@@ -5,15 +5,20 @@ import java.util.GregorianCalendar;
 
 public class P10_14 {
     public static void main(String[] args) {
-        MyDate myDate = new MyDate(561555550000l);
-        System.out.println(myDate.toString());
+        MyDate myDate1 = new MyDate(561555550000l);
+        System.out.println(myDate1.toString());
+
+        MyDate myDate2 = new MyDate(34355555133101L);
+        System.out.println(myDate2.toString());
+
+
     }
 
 }
 
-class MyDate{
+class MyDate {
 
-    Calendar gregorianCalendar = new GregorianCalendar();
+    private Calendar gregorianCalendar = new GregorianCalendar();
 
     private int year;
     private int month;
@@ -44,7 +49,7 @@ class MyDate{
         return day;
     }
 
-    public void setDate(long elapsedTime){
+    public void setDate(long elapsedTime) {
 
         gregorianCalendar.setTimeInMillis(elapsedTime);
         this.year = gregorianCalendar.get(GregorianCalendar.YEAR);
