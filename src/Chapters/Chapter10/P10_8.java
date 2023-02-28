@@ -1,4 +1,4 @@
 package Chapters.Chapter10;
 
-public class P10_25 {
+public class P10_8 {
 }
