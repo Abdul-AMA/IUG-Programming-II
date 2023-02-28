@@ -2,6 +2,28 @@ import java.math.BigInteger;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("440–02–4534".matches("\\d{3}–\\d{2}–\\d{4}"));
+        long elapsedTime = 561555550000l;
+
+
+
+        long sec = elapsedTime/1000;
+        int day1 = (int) (sec/(60*60*24));
+        int day = day1%30;
+        int month1 = day1/30;
+        int month = month1%12;
+        int year1 = month1/12;
+        int year= year1 +1970;
+        if (month == 0){
+            month =1;
+        }
+        if (day == 0){
+            day=1;
+        }
+        System.out.println("MyDate{" +
+                "year=" + year +
+                ", month=" + month +
+                ", day=" + day +
+                '}');
+
     }
 }
