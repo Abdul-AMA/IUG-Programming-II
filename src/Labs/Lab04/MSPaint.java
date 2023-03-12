@@ -10,12 +10,12 @@ import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class MSPaint  extends JFrame{
+public class MSPaint extends JFrame {
 
     Random random = new Random();
     private ArrayList<Point> points = new ArrayList<Point>();
 
-    public MSPaint()  {
+    public MSPaint() {
         enableEvents(java.awt.AWTEvent.MOUSE_MOTION_EVENT_MASK);
         setTitle("Simple Paint App");
         setSize(500, 500);
@@ -26,7 +26,7 @@ public class MSPaint  extends JFrame{
     public void paint(Graphics g) {
         for (Point p : points) {
             g.fillRect(p.x, p.y, 5, 5);
-            g.setColor(new Color(random.nextInt(250),random.nextInt(250),random.nextInt(250)));
+            g.setColor(new Color(random.nextInt(250), random.nextInt(250), random.nextInt(250)));
 
         }
     }
